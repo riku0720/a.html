@@ -1,0 +1,226 @@
+html, body, div, h1, p {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    overflow: hidden;
+}
+/* navi */
+div#navi {
+    height: 20px;
+    font-size: 14px;
+}
+div#control {
+    padding: 0 5px;
+}
+p#rev_btn {
+    display: inline-block;
+    cursor: pointer;
+}
+p#rev_btn > a {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+p#rev_btn > a:hover {
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+p#next_btn {
+    display: inline-block;
+    cursor: pointer;
+}
+p#next_btn > a {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+p#next_btn > a:hover {
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+}
+h1#month {
+    display: inline-block;
+}
+p#cal_list {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+}
+/* calendar */
+div#calendar {
+    height: calc(100% - 20px);
+}
+div#day {
+    display: flex;
+    height: 16px;
+}
+div#day > div {
+    flex: 1 1 0%;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    font-size: 10px;
+    line-height: 16px;
+}
+div#day > div:last-child {
+    border-right: none;
+}
+div.row {
+    height: calc((100% - 16px) / 6);
+}
+div.cels {
+    display: flex;
+    height: 100%;
+}
+div.cels > div {
+    flex: 1 1 0%;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    font-size: 10px;
+}
+div.cels > div.today {
+    background: #ffc;
+}
+div.cels > div:last-child {
+    border-right: none;
+}
+div.events {
+    position: relative;
+    top: calc( 13px - 100%);
+}
+div.events > div {
+    position: absolute;
+    border-radius: 5px;
+    color: #fff;
+    padding: 2px 3px;
+    margin-left: 1px;
+    line-height: 1rem;
+    cursor: pointer;
+}
+span.eventTitle {
+    overflow: hidden;
+    display: block;
+}
+div.events > div.exam {
+    background: #d60;
+}
+div.events > div.normal {
+    background: #06d;
+}
+div.events > div.closed {
+    background: #096;
+}
+div.events > div.stopped {
+    background: #a22;
+}
+div.line1 {
+    white-space: nowrap;
+}
+div.line2 {
+    white-space: normal;
+}
+div.out_month {
+    color: #999;
+}
+div.new:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #f00;
+    position: absolute;
+    border-radius: 5px;
+    top: -5px;
+    left: 0px;
+}
+ul#dep_list {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 20%);
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    list-style: none;
+    line-height: 1.75rem;
+    z-index: 100;
+}
+ul#dep_list a {
+    text-decoration: none;
+    color: #333;
+}
+ul#dep_list .nolink {
+    text-decoration: none;
+    color: #ccc;
+}
+/* pop-up */
+div#popup_bg {
+    background: rgba(0,0,0,0.1);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+div#popup {
+    position: relative;
+    top: 25%;
+    left: 15%;
+    width: 70%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    padding-bottom: 0.5rem;
+}
+p#popup_header {
+    background: #ccc;
+    height: 16px;
+    width: 100%;
+    text-align: right;
+    border-radius: 5px 5px 0 0;
+    line-height: 0;
+}
+button#popup_close {
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    border-radius: 0 5px 0 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+p#popup_title {
+    margin: 0.5rem;
+    padding: 0 0.5rem;
+    font-size: 14px;
+}
+p#popup_date {
+    margin: 0.5rem;
+    padding: 0 0.5rem;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+p#popup_description {
+    margin: 0.5rem;
+    padding: 0 1.4rem 0 0.5rem;
+    font-size: 12px;
+    overflow: overlay;
+    max-height: 40vh;
+}
+p#popup_description > a {
+    word-break: break-all;
+}

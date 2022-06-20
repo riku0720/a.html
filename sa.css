@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@media (min-width: 600px) {
+    body {
+        background-color: #f5f2e5;
+        margin: 0;
+    }
+
+    .mains{
+        justify-content: center;
+        text-align: center;
+    }
+    .ta{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

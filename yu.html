@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <header>
+        <div class="wrapper">
+            <nav>
+                 <button class="btn-menu">Menu</button>
+                <ul class="main-nav">
+                    <li><a href="home.html">ホーム</a></li>
+                    <li><a href="rireki.html">履歴</a></li>
+                    <li><a href="set.html">設定</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <p class="kuu"></p>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>ユーザ設定</title>
+        <meta name="description" content="set">
+        <link rel="stylesheet" href="yu.css">
+    </head>
+
+    <main>
+        <article class="set">
+            <div>
+                <a class="logo"><img class="ic" src="ddr.png" alt="アイコン"></a>
+            </div>
+            <div class="nyu">
+                <table class="si">
+                    <tr>
+                        <th >ニックネーム</th>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+                <table class="si">
+                    <tr>
+                        <th>表示される名前</th>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+                <p class="jen">性別:
+                <input type="radio" name="gender" value="男"> 男
+                <input type="radio" name="gender" value="女"> 女
+                <input type="radio" name="gender" value="その他"> その他</p>
+                <table>
+                    <tr>
+                        <th>興味のあるジャンル</th>
+                        <td>
+                            <label class="item">
+                                <input type="checkbox" checked="checked">
+                                <span>a関係</span>
+                            </label>
+                            <label class="item">
+                                <input type="checkbox" checked="checked">
+                                <span>b関係</span>
+                            </label>
+                            <label class="item">
+                                <input type="checkbox" checked="checked">
+                                <span>c関係</span>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <h4>気になる資格</h4>
+                <table class="si">
+                    <tr>
+                        <td><input type="text" placeholder="検索"></td>
+                        <td><a class="btn" href="yu.html">追加</a></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label class="item">
+                                <input type="checkbox" checked="checked">
+                                <span>資格a</span>
+                            </label>
+                            <label class="item">
+                                <input type="checkbox" checked="checked">
+                                <span>資格b</span>
+                            </label>
+                            <label class="item">
+                                <input type="checkbox" checked="checked">
+                                <span>資格c</span>
+                            </label>
+                            <label class="item">
+                                <input type="checkbox" checked="checked">
+                                <span>資格d</span>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+    </main>
+    <script src="js/script.js"></script>
+</html>
